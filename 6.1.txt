@@ -1,0 +1,47 @@
+<html>
+<title>Personal information</title>
+<body>
+<form method="POST" action="process.php">
+<center>
+<h1><b><i>Fill the form:</i></b></h1>
+<table width="200" height="200">
+<tr>
+<td>First_Name:<input type="text" name="fname" placeholder="Enter First_Name" 
+required="required"></td>
+</tr>
+<tr>
+<td>Last_Name:<input type="text" name="lname" placeholder="Enter Last_Name" 
+required="required"></td>
+</tr>
+<tr>
+<td>Age:<input type="text" name="age" placeholder="Enter your age" required="required"></td>
+</tr>
+<tr>
+<td>Phone_No:<input type="text" name="phno" placeholder="Enter Phone number" 
+required="required"></td>
+</tr>
+<tr>
+<td>Email:<input type="email" name="mail" placeholder="Enter mail_id" required="required"></td>
+</tr>
+<tr>
+<td>Address:<input type="text" name="add" placeholder="Enter Address" required="required"></td>
+</tr>
+<tr>
+<td>State:<input type="text" name="stat" placeholder="Enter State" required="required"></td>
+</tr>
+<tr>
+<td>Nationality:<input type="text" name="nation" placeholder="Enter Nationality" 
+required="required"></td>
+</tr>
+<tr>
+<td>Pincode:<input type="text" name="pin" placeholder="Enter Pincode" required="required"></td>
+</tr>
+<tr>
+<td><br><input type="submit" name="submit" value="submit"></td>
+</tr>
+</font>
+</table>
+</center>
+</form>
+</body>
+</html>

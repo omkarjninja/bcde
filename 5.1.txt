@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>REGISTRATION</title>
+<style>
+font{
+font-family:fantasy;
+}
+input{
+height:32px;
+width:170px;
+border:1px solid transparent;
+border-radius:5px;
+}
+select{
+height:32px;
+width:170px;
+}
+table td{
+padding:4px;
+}
+#butt{
+position:absolute;
+top:53%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+#b1{
+font-family:fantasy;
+font-size:18px;
+padding:7px;
+border-radius:5px;
+box-shadow:5px 5px 10px;
+}
+#b2{
+height:32px;
+width:170px;
+font-family:fantasy;
+font-size:18px;
+padding:7px;
+border-radius:5px;
+box-shadow:5px 5px 10px;
+}
+button:hover{
+cursor:pointer;
+background-color:black;
+color:white;
+}
+</style>
+</head>
+<body bgcolor="tomato">
+<center> <h1>Registration Page</h1></center>
+<center><table>
+<tr>
+<td><font>UserName :</font></td>
+<td><label><input type="text" placeholder="Enter your username" id="name"/></label></td>
+</tr>
+<tr>
+<td><label><font>Email-id :</font></label></td>
+<td><input type="email" placeholder="Enter your email" id="mail"/></td>
+</tr>
+<tr>
+<td><label><font>Phone Number :</font></label></td>
+<td><input type="text" placeholder="Enter your phone number" id="phn"/></td>
+</tr>
+<tr>
+<td><label><font>Password :</font></label></td>
+<td><input type="password" placeholder="Enter your password" id="pass"/></td>
+</tr>
+<tr>
+<td><label><font>Confirm Password :</font></label></td>
+<td><input type="password" placeholder="Enter your password again" id="cpass"/></td>
+</tr>
+<tr>
+<div id="butt">
+<a href="C:\Users\KUNAL\Desktop\thank.html" ><input id="b1" type="button" onclick="return
+valid();" value="Submit"/></a>
+</div></tr>
+</table></center>
+</body>
+<script>
+function valid() {
+var username = document.getElementById('name').value;
+var namepattern = /^[ A-Za-z]{3,30}$/;
+if (username=="") {
+alert("Enter the UserName")
+return false;
+}
+else if (!namepattern.test(username)) {
+alert("enter Valid UserName");
+return false;
+}
+var email = document.getElementById('mail').value;
+var emailpattern = /^[a-z]{2,}[0-9]{0,}([\_\.\-{1}])?([a-zA-Z0-9]+)\@([a-zA-Z0-9]+)([\.])([a-zAZ\.]+)$/;
+if (email=="") {
+alert("Enter E-Mail")
+return false;
+}
+else if (!emailpattern.test(email)) {
+alert("enter valid Email ");
+return false;
+}
+var phone = document.getElementById('phn').value;
+var phonepattern = /^[6-9]{1}[0-9]{9}$/;
+if (phone=="") {
+alert("Enter Phone Number")
+return false;
+}
+else if (!phonepattern.test(phone)) {
+alert("enter valid phone number");
+return false;
+}
+var password = document.getElementById('pass').value;
+var passwordpattern = /^[ A-Z]{1}[ a-z]{3,30}[0-9]{1,}$/;
+if (password =="")
+{
+alert("Enter Password")
+return false;
+}
+else if (!passwordpattern.test(password)) {
+alert("Password should contain 1 uppercase, lowercase and numeric");
+return false;
+}
+debugger;
+var password = document.getElementById('pass').value;
+var cpassword = document.getElementById('cpass').value;
+if (cpassword =="") {
+alert("Enter confirm password");
+return false;
+} else if (cpassword !== password) {
+alert("Passwords do not match!");
+return false;
+}
+alert('succesfully registerd ')
+}
+</script>
+</html>

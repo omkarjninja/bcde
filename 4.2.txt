@@ -1,0 +1,18 @@
+<html>
+<head>
+ <title>Blinking Text Example</title>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+ <h1 id="blinkingText">Harry Potter</h1>
+ <script>
+ $(document).ready(function()
+{
+ setInterval(function()
+{
+ $('#blinkingText').toggle();
+}, 10);
+});
+ </script>
+</body>
+</html>

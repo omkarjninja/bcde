@@ -1,0 +1,53 @@
+<?php
+include 'database.php';
+if(isset($_POST['submit']))
+{
+$First_Name=$_POST['fname'];
+$Last_Name=$_POST['lname'];
+$Age=$_POST['age'];
+$Phone_No=$_POST['phno'];
+$Email=$_POST['mail'];
+$Address=$_POST['add'];
+$State=$_POST['stat'];
+$Nationality=$_POST['nation'];
+$Pincode=$_POST['pin'];
+$sql="insert into 
+person(First_Name,Last_Name,Age,Phone_No,Email,Address,State,Nationality,Pincode) 
+values('$First_Name','$Last_Name','$Age','$Phone_No','$Email','$Address','$State','$Nationality','$Pincode')
+";
+if(mysqli_query($con,$sql))
+{
+echo "<script>alert('new record inserted')</script>";
+echo "
+<table border='1'>
+<tr>
+<th>First_Name</th>
+<th>Last_Name</th>
+<th>Age</th>
+<th>Phone_No</th>
+<th>Email</th>
+<th>Address</th>
+<th>State</th>
+<th>Nationality</th>
+<th>Pincode</th>
+</tr>
+<tr>
+<td>$First_Name</td>
+<td>$Last_Name</td>
+<td>$Age</td>
+<td>$Phone_No</td>
+<td>$Email</td>
+<td>$Address</td>
+<td>$State</td>
+<td>$Nationality</td>
+<td>$Pincode</td>
+</tr>
+</table>";
+}
+else
+{
+echo "error:".mysqli_error($con);
+}
+//mysqli_close($con);
+}
+?>

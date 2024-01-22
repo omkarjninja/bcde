@@ -1,0 +1,214 @@
+
+top.html
+
+
+<html>
+<body bgcolor="YellowGreen ">
+<center>
+<marquee bgcolor="yellow" width="650" behavior="alternate">
+<fontface="BookmanOld Style" size="8" color="green"><b><i>PUOnline
+Book Store</i></b>
+</font>
+</marquee> <br>
+<fontface="BookmanOld Style" size="3" color="white"><b>Created &
+Maintained by PresidencyUniversity</b></font>
+</center>
+<br>
+<tablewidth="100%" height="50%" cellspacing=10><tr align="center">
+<td> <a href="Home.html" target="_parent">
+<fontface="Brush Script" size="6" color="navy">HOME </a> </td>
+<td> <a href="login.html" target="rightframe">
+<fontface="Brush Script" size="6" color="navy">LOGIN</a> </td>
+<td> <a href="registration.html" target="rightframe">
+<fontface="Brush Script" size="6" color="navy">REGISTER </a> </td>
+<td> <a href="catalogue.html" target="leftframe">
+<fontface="Brush Script" size="6" color="navy">CATALOGUE</a> </td>
+</tr>
+</table>
+</body>
+</html>
+
+
+left.html
+
+
+<html>
+<body align="center" bgcolor="bisque"> <br>
+<img src="ebook.png" width="200" height="400"/><br><br>
+</body>
+</html>
+
+
+right.html
+
+
+<html>
+<body bgcolor="orange">
+<center>
+<img src="D:\WT\image\PUlogo.jpg" height="170"><br>
+<fontface="BookmanOld Style" size="5" color="blue">
+<h1><b>Welcome to theOnline Book Store!!!</b></font><br />
+<fontface="BookmanOld Style" size="5" color="red">
+<h2><b> "AHuge CollectionOf Engineering E-Books"</b> </h2> </font>
+</center>
+</body>
+</html>
+
+
+home.html
+
+
+<framesetrows="30%,*">
+<frame src="top.html" name="topframe">
+<frameset cols="15%,*">
+<frame src="left.html" name="leftframe">
+<frame src="right.html" noresize name="rightframe" >
+</frameset>
+
+
+login.html:
+
+
+<html>
+<body bg color="pink">
+<basefontface="Cambria" size="4"> <br>
+<center>
+<fontface="BookmanOld Style" size="7" color="purple">
+<b>Enter LoginDetails:</b>
+</font>
+</center>
+<form name="f1" method="post" action="right.html">
+<table align="center" width="100" height="150" cellspacing=”15”>
+<tr><td><b>Login ID:</b></td>
+<td><inputtype="text" name="t1"></td>
+</tr>
+<tr>
+<td><b>Password:</b></td>
+<td><inputtype="password" name="t2"></td>
+</tr>
+<tr align="center">
+<td><inputtype="submit" name="b1" value="Submit"></td>
+<td><inputtype="reset" name="b2" value="Reset"></td>
+</tr>
+</table> </form> </basefont> </body> </html>
+
+
+Registration.html
+
+
+<html>
+<head><title>Registration Form</title></head>
+<body bgcolor="#E4F0F8">
+<center><font color="blue" size="6" face="arial">Registration Form
+</font> </center><br />
+<form action="right.html">
+FirstName(Minimum 6 characters)<font color="red">* </font>
+<inputtype='text' id='firstname' /><br /><br />
+LastName<font color="red"><font color="red">* </font> </font>
+<inputtype='text' id='lastname' /><br /><br />
+EmailAddress<font color="red">* </font>
+<inputtype='text' id='email' /><br />
+<font color="red">(one e-mail id only):</font>
+<font color="redblue">e.g.smith@hotmail.com</font><br /><br/>
+Password(minimum 6 characters)<font color="red">* </font>
+<inputtype='password' id='pass'><br /><br/>
+Address<font color="red">* </font>
+<textarea rows="2" cols="20" id='addr' /></textarea> <br /> <br/>
+MobileNo<font color="red">* </font>
+<inputtype='text' id='mobileno' /><br />
+Gender: <inputtype='radio' name="gender">male
+<inputtype='radio' name="gender">female<br/><br />
+<inputtype='Submit' value='submit' />
+<inputtype='Reset' value='reset' />
+</form> </body> </html>
+
+
+catalogue.html
+
+
+<html>
+<body align="center" bgcolor="bisque"> <br>
+<a href="cse.html" target="rightframe"><fontsize="6">CSE</font> </a>
+<br><br>
+<a href="ece.html" target="rightframe"><fontsize="6">ECE</font></a>
+<br><br>
+<a href="it1.html" target="rightframe"><fontsize="6">IT</font></a>
+<br><br>
+<a href="eee.html" target="rightframe"><fontsize="6">EEE</font></a>
+<br><br>
+<a href="mech.html" target="rightframe"><fontsize="6">MECH</font></a>
+<br>
+</body>
+</html>
+
+
+cse.html
+
+
+<html>
+<body bgcolor="Plum">
+<h1><font color="blue">COMPUTER SCIENCE ENGINEERING</font></h1>
+<h2>
+<ultype="square">
+<li><a href="DataStructures.html"/>Data Structures using Python</a>
+</li>
+<li>Web Technologies</li> <li>Linux Programming</li>
+<li>Artificial Intelligence</li>
+</ul>
+</h2>
+</body>
+</html>
+
+
+
+DataStructures.html
+
+
+<html>
+<body bgcolor="pink">
+<form action="order.html">
+<table border="1" width="100%">
+<tr> <th> <img src="D:\WT\image\data-structures-using-python.webp"
+width=100 height=100/> </th>
+<th> Book:Data Structures using Python <br> Author: Vasudevan Shriram K
+<br> Publication:OxfordOxford Press</th> <th>531 </th>
+<th> <inputtype="submit" value="Add to cart"/></th> </tr>
+<tr>
+<th> <img src="D:\WT\image\Data-Structures-And-Algorithms-In-Python.jpg"
+width=100 height=100/></th>
+<th> Book:Data Structures And AlgorithmsIn Python <br> Author:Michael
+T.Goodrich, Roberto Tamassia <br> Publication: Wiley India</th> <th>
+898 </th>
+<th> <inputtype="submit" value="Add to cart"/></th> </tr>
+</table>
+</form>
+</body>
+</html>
+
+
+order.html
+
+
+<html>
+<head><title>order conformation</title></head>
+<body bgcolor="cyan">
+<center>
+<pre><strong>
+<b>Your orderIs Conformed
+</strong></pre>
+<h2><b>THANK YOU...Visit Again</h2>
+</center>
+</body></html>
+ece.html
+<html>
+<body bgcolor="Plum">
+<h1><font color="blue">Electronics and Communication Engineering</font>
+</h1>
+<h2>
+<ul>
+<li>Digital Circuits</li> <li>Signals and Systems</li> <li>Digital
+Communication</li>
+</ul>
+</h2>
+</body>
+</html>
